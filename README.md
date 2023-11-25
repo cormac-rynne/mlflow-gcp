@@ -130,13 +130,13 @@ To start up everything again, run `./scripts/start.sh`
 <h3>Root (./)</h3>
 1. docker-compose.yaml: Orchestrates the deployment of MLflow, Postgres, and pgAdmin services using Docker.
 
-2. .env.sample: Template for environment variables required for configuring the Docker services.
+2. .env.sample: Template for environment variables required for configuring the Docker and GCP services
 
 3. servers.json.sample: Sample configuration file for setting up the pgAdmin server to connect to Postgres by default.
 
 <h3>Scripts (./scripts/)</h3>
 
-4. config.sh: Script to set environment variables and configurations for the VM and other project files in GCP.
+4. buildall.sh: Script to run create, firewall, transfer, and up scripts in that order
 
 5. create.sh: Automates the creation of a GCP VM instance and the installation of Docker.
 
@@ -149,6 +149,7 @@ To start up everything again, run `./scripts/start.sh`
 9. start.sh: Checks the VM status, starts it if necessary, and runs the up.sh script to launch the services.
 
 10. stop.sh: Gracefully shuts down the GCP VM, stopping all services.
+11. deleteall.sh: Deletes the VM instance and the firewall rule
 
 
 <!-- CONTRIBUTING -->
