@@ -1,0 +1,20 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "MLFlow Postgres Server",
+            "Group": "Servers",
+            "Host": "postgres",
+            "Port": 5432,
+            "Username": "mlflow_user",
+            "MaintenanceDB": "postgres",
+            "SSLMode": "prefer",
+            "PassFile": "/var/lib/pgadmin/storage/first_middle_last_email_com/pgpassfile",
+            "SavePassword": true,
+            "ConnectionParameters": {
+                "sslmode": "prefer",
+                "connect_timeout": 10,
+                "passfile": "/var/lib/pgadmin/storage/first_middle_last_email_com/pgpassfile"
+            }
+        }
+    }
+} 
